@@ -119,9 +119,86 @@
 
 // Insert Adjacent
 
-let selectDivElement = document.getElementById("div-element");
+// let selectDivElement = document.getElementById("div-element");
 
 
-selectDivElement.insertAdjacentHTML("afterend","<h1>welcome to javaScript</h1>");
+// selectDivElement.insertAdjacentHTML("afterend","<h1>welcome to javaScript</h1>");
 
 // console.log(document.body)
+
+
+// attributes
+// let selectDiv = document.querySelector("div");
+// // set Attribute
+// selectDiv.setAttribute("id","parent")
+// // getAttribute
+// console.log(selectDiv.getAttribute("id"))
+// // check attribute
+
+// let checkAttribute = selectDiv.hasAttribute("child");
+// console.log(checkAttribute)
+
+// // remove attribute
+// selectDiv.removeAttribute("id")
+// console.log(selectDiv)
+
+// // toggle
+
+// selectDiv.toggleAttribute("id","child")
+// console.log(selectDiv)
+
+
+
+// use inline css with javaScript 
+
+// let selectParent = document.getElementById("parent");
+// using single way
+// selectParent.style.color = "white"
+// selectParent.style.backgroundColor = "black"
+
+// using css with multiple styles
+
+// selectParent.style.cssText = "background-color:black;color:white;font-size:40px; border:2px solid red;margin-top:100px"
+
+
+// classList
+
+// selectParent.classList.add("child")
+// selectParent.classList.remove("child")
+// selectParent.classList.toggle("java")
+// selectParent.classList.toggle("java")
+// console.log(selectParent)
+
+
+
+// task 
+// setOffWidth,setOffHeight,clientWidth,ClientHeight
+
+
+
+
+// EventS
+// click,dbclick,keydown,keyup
+// function backgroudnChanger (){
+//       selectCircle.style.backgroundColor="red"
+// }
+// let selectBtn = document.getElementById("btn")
+// let selectCircle = document.getElementById("circle")
+// selectBtn.addEventListener("keyup",backgroudnChanger)
+
+
+// input event
+
+let selectInput = document.getElementById("inp");
+let store = ""
+selectInput.addEventListener("input",(event)=> {
+     store = event.target.value
+    //  console.log(store)
+})
+
+
+let addButton = document.getElementById("add")
+let selecth1 = document.getElementById("namePrin");
+addButton.addEventListener("click",()=> {
+    selecth1.textContent = "your name is "+ store
+})
