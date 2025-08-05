@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <script src="atm.js" defer></script>
+</head>
+<body class="flex flex-col justify-center items-center h-screen">
+
+
+    <div class="p-[150px_100px] bg-blue-500 border-2 rounded-2xl flex flex-col justify-center items-center gap-y-4 text-white  " id="pin_parent">
+        <h1 class="text-4xl font-bold ">Welcome to Atm Machine</h1>
+        <input type="text" placeholder="enter your pin" class="p-2 mt-4 focus:outline-none border-2 border-gray-300 rounded" id="InputPin">
+         <button class="mt-2 p-[3px_10px] border-2 rounded border-white bg-red-600 " id="EnterPin">Enter</button>
+         <p id="showErrorPin" class="text-red-600"></p>
+    </div>
+    <p id="showPinError" class="text-red-500"></p>
+   
+    <!-- Show Atm Options -->
+
+    <div class="hidden" id="parentOption">
+ 
+        <h1 id="1" class="font-bold ">1.Check Balance</h1>
+         <h1 id="2" class="font-bold ">2.Deposite</h1>
+          <h1 id="3" class="font-bold ">3.Withdraw</h1>
+           <h1 id="4" class="font-bold ">4.Exit</h1>
+           <input type="text" placeholder="enter any option" class="p-2 mt-4 focus:outline-none border-2 border-gray-300 rounded" id="enterOption">
+           <br>
+           <button  class="mt-2 p-[3px_10px] border-2 rounded border-white bg-red-600 " id="ClickOption">Submit</button>
+           
+    </div>
+
+    <h1 id="showOption" class="text-3xl font-bold "></h1>
+    <p id="showOptionError" class="text-red-600"></p>
+</body>
+</html>
